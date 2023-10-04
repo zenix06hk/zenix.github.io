@@ -1,0 +1,17 @@
+.heart-stack i {
+  transition: opacity 0.3s ease-in-out;
+  border: 1px solid red;
+  right: 200px;
+}
+
+.heart-filled {
+  background: linear-gradient($color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.heart-filled:hover {
+  cursor: pointer;
+  opacity: 1;
+}
