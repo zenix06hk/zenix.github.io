@@ -1,0 +1,17 @@
+@keyframes submenu-slideup {
+  from {
+    transform: translateY(2100px);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes rotate-tickbox {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
