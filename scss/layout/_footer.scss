@@ -1,0 +1,22 @@
+.footer {
+  @include hyperlink-white-text;
+  background-color: $dark-grey;
+  padding: 20px;
+  & > h3 {
+    font-family: $font-logo-style;
+    color: $white;
+    padding: 10px 0;
+  }
+  & > a:link {
+    & > p {
+      margin: 5px 0;
+    }
+  }
+  &-icon {
+    margin: 0 10px 0 0;
+  }
+  &-with-icon {
+    display: flex;
+    align-items: center;
+  }
+}

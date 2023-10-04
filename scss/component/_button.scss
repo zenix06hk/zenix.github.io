@@ -1,0 +1,7 @@
+@mixin explore-button {
+  border: none;
+  border-radius: 50px;
+  color: $white;
+  background: linear-gradient(340deg, $color-primary, $color-secondary);
+  padding: 20px;
+}

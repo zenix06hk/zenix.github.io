@@ -1,0 +1,125 @@
+main {
+  background-color: $white-smoke;
+}
+
+.menu-box {
+  &_content-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  &-container {
+    background-color: $white-smoke;
+    border-radius: 40px 40px 0 0;
+    padding: 20px;
+    width: 100%;
+    animation-name: submenu-slideup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  &_top {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    & > h1 {
+      font-family: $font-logo-style;
+    }
+  }
+
+  &_list-catagory {
+    margin: 0 0 5px 0;
+    position: relative;
+  }
+  &_list-underline {
+    @include underline;
+  }
+
+  &_item {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  &_tickbox {
+    transition: right 0.4s ease-in-out;
+    color: #fff;
+    position: absolute;
+    right: -80px;
+    top: 0;
+    height: auto;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tickbox;
+  }
+
+  &_list-item_name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: margin 0.3s ease-in-out;
+    margin-right: 60px;
+    padding-bottom: 5px;
+    & > h3 {
+      font-weight: bold;
+    }
+  }
+
+  &_tickbox-container {
+    transform: rotate(0deg);
+    transition: all 0.4s ease-in-out;
+  }
+
+  &_list-item_price {
+    transition: right 0.4s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: end;
+    font-weight: bold;
+    text-align: bottom;
+  }
+  &_order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .menu-box_item:hover .menu-box_list-item_name {
+    margin-right: 178px;
+  }
+
+  .menu-box_item:hover .menu-box_tickbox {
+    right: 0;
+  }
+
+  .menu-box_item:hover .menu-box_tickbox-container {
+    transform: rotate(360deg);
+  }
+
+  .menu-box_item:hover .menu-box_list-item_price {
+    right: 50px;
+  }
+
+  .order-btn {
+    @include hyperlink-white-text;
+    @include explore-button;
+    display: flex;
+    margin: 20px 0;
+    height: 70px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+}
