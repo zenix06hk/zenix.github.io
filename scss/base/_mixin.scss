@@ -1,0 +1,125 @@
+@mixin tablet-only {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin desktop-only {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin default-text-style {
+  * {
+    font-family: "Roboto", sans-serif;
+  }
+}
+//instruction steps
+
+@mixin instruction-box {
+  display: flex;
+  align-items: center;
+  background-color: $white-smoke;
+  position: relative;
+  margin: 30px 10px;
+  padding: 20px 0;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(202, 202, 202, 0.795),
+    0 4px 8px 0 rgba(202, 202, 202, 0.795);
+  &:hover {
+    background-color: #ece5fa;
+    .instruction_box-icon {
+      & > i {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+@mixin number-box {
+  border: 1px solid transparent;
+  background-color: $color-primary;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -15px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+@mixin new-label {
+  background-color: $color-tretiary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  left: calc(80% - 30px);
+  top: calc(5%);
+  color: $dark-green;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+//footer
+
+@mixin hyperlink-black-text {
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+@mixin hyperlink-white-text {
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+//submenu -
+
+@mixin submenu-items {
+  border: 1px solid orange;
+  background-color: $white;
+  margin: 15px 0;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(202, 202, 202, 0.795),
+    0 4px 8px 0 rgba(202, 202, 202, 0.795);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin underline {
+  display: block;
+  border-top: 3px solid $color-tretiary;
+  width: 40px;
+}
+
+@mixin tickbox {
+  background-color: #8fffc4;
+  width: 55px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+  & > .menu-box_tickbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    & > i {
+      color: #8fffc4;
+    }
+  }
+}
