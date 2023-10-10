@@ -1,0 +1,41 @@
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.main-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+@include desktop-only {
+  .background-image {
+    background: url("../../images/test2.jpg") no-repeat;
+  }
+}
+
+@include desktop-only {
+  .the-full-palette-background-image {
+    background: url("../../images/sole.jpeg") no-repeat;
+  }
+}
+
+@include desktop-only {
+  .the-enchanted-plate-background-image {
+    background: url("../../images/ravioli.jpg") no-repeat;
+  }
+}
+
+@include desktop-only {
+  .bastille-background-image {
+    background: url("../../images/scallops.jpg") no-repeat;
+  }
+}
+
+@include desktop-only {
+  .le-gourmand-background-image {
+    background: url("../../images/lobster.jpg") no-repeat;
+  }
+}
