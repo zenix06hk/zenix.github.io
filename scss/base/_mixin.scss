@@ -19,7 +19,7 @@
 @mixin instruction-box {
   display: flex;
   align-items: center;
-  background-color: $white-smoke;
+  background-color: $silvery-white;
   position: relative;
   margin: 30px 10px;
   padding: 20px 0;
@@ -59,7 +59,7 @@
   position: absolute;
   width: 80px;
   height: 30px;
-  left: calc(80% - 30px);
+  right: 5%;
   top: calc(5%);
   color: $dark-green;
   font-weight: 500;
@@ -100,17 +100,18 @@
   display: block;
   border-top: 3px solid $color-tretiary;
   width: 40px;
+  margin-top: 5px;
 }
 
 @mixin tickbox {
   background-color: #8fffc4;
   width: 55px;
-  height: 75px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0 15px 15px 0;
-  & > .menu-box_tickbox-container {
+  & > i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,8 +119,6 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    & > i {
-      color: #8fffc4;
-    }
+    color: #8fffc4;
   }
 }

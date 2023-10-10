@@ -36,8 +36,8 @@
     padding: 20px 0;
     font-weight: bold;
   }
-  background-color: $white-smoke;
-  padding: 0 20px;
+  background-color: $silvery-white;
+  padding: 20px;
   &_new-label {
     @include new-label;
   }
@@ -72,8 +72,9 @@
       padding: 5px 20px;
     }
   }
-  &-heart i:before {
-    animation-name: animation-heart;
-    animation-duration: 300ms;
+  &-heart {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
   }
 }
