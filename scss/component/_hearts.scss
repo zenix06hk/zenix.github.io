@@ -1,7 +1,9 @@
 .heart-stack i {
-  transition: opacity 0.3s ease-in-out;
   border: 1px solid red;
+  transition: opacity 0.3s ease-in-out;
   right: 200px;
+  width: 35px;
+  height: 35px;
 }
 
 .heart-filled {
