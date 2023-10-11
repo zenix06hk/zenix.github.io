@@ -1,6 +1,3 @@
-header {
-  // border: 1px solid orange;
-}
 .top-banner {
   display: flex;
   align-items: center;
@@ -101,7 +98,6 @@ main {
     &_tickbox {
       height: 100%;
       width: 70px;
-      border: 1px solid blue;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -150,23 +146,15 @@ main {
   animation-fill-mode: forwards;
 }
 
-.slideup:nth-of-type(0) {
-  animation-delay: 0.1s;
+.subtitle_entrees .slideup {
+  animation-delay: 0.8s;
 }
-.slideup:nth-of-type(1) {
-  animation-delay: 0.2s;
+.subtitle_main-dish .slideup {
+  animation-delay: 1.8s;
 }
-.slideup:nth-of-type(2) {
-  animation-delay: 0.3s;
+.subtitle_desserts .slideup {
+  animation-delay: 2.6s;
 }
-.slideup:nth-of-type(3) {
-  animation-delay: 0.4s;
-}
-.slideup:nth-of-type(4) {
-  animation-delay: 1.5s;
-}
-
-// hearts
 
 .heart-stack {
   position: absolute;

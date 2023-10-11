@@ -84,6 +84,10 @@ img {
   height: 35px;
 }
 
+.restaurant_content-heart i {
+  transition: opacity 2s ease-in-out;
+}
+
 .heart-filled {
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
@@ -273,6 +277,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px 10px 0;
+  position: relative;
 }
 .restaurant_content_table-content {
   display: inline-block;
@@ -287,8 +292,6 @@ img {
 }
 .restaurant_content-heart {
   position: absolute;
-  bottom: 60px;
-  right: 60px;
 }
 
 .top-banner {
@@ -387,7 +390,6 @@ main {
 .menu-box_item_tickbox {
   height: 100%;
   width: 70px;
-  border: 1px solid blue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -431,24 +433,16 @@ main {
   animation-fill-mode: forwards;
 }
 
-.slideup:nth-of-type(0) {
-  animation-delay: 0.1s;
+.subtitle_entrees .slideup {
+  animation-delay: 0.8s;
 }
 
-.slideup:nth-of-type(1) {
-  animation-delay: 0.2s;
+.subtitle_main-dish .slideup {
+  animation-delay: 1.8s;
 }
 
-.slideup:nth-of-type(2) {
-  animation-delay: 0.3s;
-}
-
-.slideup:nth-of-type(3) {
-  animation-delay: 0.4s;
-}
-
-.slideup:nth-of-type(4) {
-  animation-delay: 1.5s;
+.subtitle_desserts .slideup {
+  animation-delay: 2.6s;
 }
 
 .heart-stack {

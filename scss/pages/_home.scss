@@ -60,6 +60,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 0;
+    position: relative;
   }
   &_table-content {
     display: inline-block;
@@ -74,7 +75,5 @@
   }
   &-heart {
     position: absolute;
-    bottom: 60px;
-    right: 60px;
   }
 }

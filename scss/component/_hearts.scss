@@ -1,9 +1,12 @@
 .heart-stack i {
-  // border: 1px solid red;
   transition: opacity 0.3s ease-in-out;
   right: 200px;
   width: 35px;
   height: 35px;
+}
+
+.restaurant_content-heart i {
+  transition: opacity 2s ease-in-out;
 }
 
 .heart-filled {
