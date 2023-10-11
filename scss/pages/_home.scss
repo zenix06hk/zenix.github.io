@@ -10,6 +10,7 @@
   }
   &_box {
     @include instruction-box;
+    cursor: pointer;
   }
   &_box-number {
     @include number-box;

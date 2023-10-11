@@ -39,4 +39,12 @@
   @include explore-button;
   margin: 20px 0;
   width: 280px;
+  transition-duration: 1s;
+}
+
+.explore-restaurants-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-position: right left;
+  background: linear-gradient(0deg, $color-primary, $color-secondary);
 }
