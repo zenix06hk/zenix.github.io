@@ -1,3 +1,7 @@
+.site-container {
+  @include site-loader;
+}
+
 .instruction {
   padding: 0 20px;
   font-weight: bold;
@@ -48,7 +52,7 @@
     height: 250px;
     width: 100%;
     position: relative;
-    margin: 20px 0;
+    margin: 40px 0;
     & > img {
       object-fit: cover;
       width: 100%;
@@ -77,4 +81,10 @@
   &-heart {
     position: absolute;
   }
+}
+
+.restaurant_content_card:hover {
+  transition-duration: 0.8s;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
