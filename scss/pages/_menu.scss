@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 18px;
+  left: 15px;
 }
 
 .home-page-arrow a {
@@ -25,7 +25,7 @@
 }
 
 main {
-  background-color: $silvery-white;
+  background-color: $light-grey;
 }
 
 .menu-box {
@@ -35,7 +35,7 @@ main {
     object-fit: cover;
   }
   &-container {
-    background-color: $silvery-white;
+    background-color: $light-grey;
     border-radius: 40px 40px 0 0;
     padding: 20px;
     position: relative;
@@ -52,6 +52,7 @@ main {
   }
 
   &_list {
+    padding-bottom: 30px;
     &_catagory {
       margin: 0 0 5px 0;
       // position: relative;
@@ -140,7 +141,7 @@ main {
 }
 
 .slideup {
-  animation: slide-up-item ease 1s;
+  animation: slide-up-item ease 3s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -162,10 +163,17 @@ main {
 }
 
 .order-btn {
+  @include hyperlink-white-text;
+  @include color-button;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  padding: 30px 0;
+  margin: auto;
+  width: 280px;
+  transition-duration: 1s;
+  margin-top: 50px;
 }
 
 button {
