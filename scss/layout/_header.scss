@@ -2,13 +2,10 @@
   @include default-text-style;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 0;
-  padding: 10px 0;
+.top-banner {
+  @include banner-with-logo;
 }
+
 .location {
   background-color: $bright-grey;
   display: flex;
