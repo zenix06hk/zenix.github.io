@@ -518,22 +518,42 @@ main {
   transform: rotate(360deg);
 }
 
-.slideup {
-  animation: slide-up-item ease 2s;
+.menu-box_item {
+  animation-name: slide-up-item;
+  animation-duration: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
 
-.subtitle_entrees .slideup {
-  animation-delay: 0.8s;
+.slideup-1 {
+  animation-delay: 0.3s;
 }
-
-.subtitle_main-dish .slideup {
+.slideup-2 {
+  animation-delay: 0.6s;
+}
+.slideup-3 {
+  animation-delay: 0.9s;
+}
+.slideup-4 {
+  animation-delay: 1.2s;
+}
+.slideup-5 {
+  animation-delay: 1.5s;
+}
+.slideup-6 {
   animation-delay: 1.8s;
 }
-
-.subtitle_desserts .slideup {
-  animation-delay: 2.6s;
+.slideup-7 {
+  animation-delay: 2.1s;
+}
+.slideup-8 {
+  animation-delay: 2.4s;
+}
+.slideup-9 {
+  animation-delay: 2.7s;
+}
+.slideup-10 {
+  animation-delay: 3s;
 }
 
 .heart-stack {
@@ -590,4 +610,9 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   background-position: right center;
   background: linear-gradient(0deg, #9356dc, #ff79da);
+}
+
+.order-btn:hover {
+  transition-duration: 0.8s;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
