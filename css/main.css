@@ -528,30 +528,39 @@ main {
 .slideup-1 {
   animation-delay: 0.3s;
 }
+
 .slideup-2 {
   animation-delay: 0.6s;
 }
+
 .slideup-3 {
   animation-delay: 0.9s;
 }
+
 .slideup-4 {
   animation-delay: 1.2s;
 }
+
 .slideup-5 {
   animation-delay: 1.5s;
 }
+
 .slideup-6 {
   animation-delay: 1.8s;
 }
+
 .slideup-7 {
   animation-delay: 2.1s;
 }
+
 .slideup-8 {
   animation-delay: 2.4s;
 }
+
 .slideup-9 {
   animation-delay: 2.7s;
 }
+
 .slideup-10 {
   animation-delay: 3s;
 }
