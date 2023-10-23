@@ -37,6 +37,7 @@ main {
   &_top {
     display: flex;
     align-items: flex-start;
+    max-width: calc(85%);
     padding: 10px 0;
     & > h1 {
       font-family: $font-logo-style;

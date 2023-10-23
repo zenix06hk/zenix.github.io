@@ -430,6 +430,7 @@ main {
 .menu-box_top {
   display: flex;
   align-items: flex-start;
+  max-width: 85%;
   padding: 10px 0;
 }
 .menu-box_top > h1 {
