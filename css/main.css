@@ -616,12 +616,6 @@ button a {
   font-weight: bold;
 }
 
-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  background-position: right center;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
-}
-
 .order-btn:hover {
   transition-duration: 0.8s;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
